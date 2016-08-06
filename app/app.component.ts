@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+import { GameComponent } from './game.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    directives: [GameComponent],
+    template: `
+    <h1>Bomberwalk</h1>
+    <game-board>
+    `
 })
 export class AppComponent { }
